@@ -18,7 +18,7 @@ const AllProducts = () => {
         })
     },[]);
     return (
-        <div>
+        <>
             <div className="products-area">
                 {loading ? <Preloader />
                 :<div className="products-container">
@@ -30,7 +30,7 @@ const AllProducts = () => {
                     }
                 </div>}
             </div>
-        </div>
+        </>
     );
 };
 
