@@ -1,7 +1,17 @@
 .product-cart{
-
+    margin: 15px;
+    font-family: 'Jost';
 }
 .product-cart-img img{
-    width: 80%;
-    height: 300px;
+    width: 90%;
+    height: 200px;
+}
+.product-cart-body {
+    margin-top: 20px;
+}
+.product-cart-body h4{
+    font-size: 18px;
+}
+.product-cart-body h3{
+    font-size: 24px;
 }

@@ -1,9 +1,11 @@
 .products-area{
-    margin: 50px 30px;
+    margin: 50px;
 }
 .products-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 60px;
     grid-column-gap: 30px;
+    justify-items: center;
+    align-items: center;
 }
