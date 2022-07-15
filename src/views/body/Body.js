@@ -2,11 +2,15 @@ import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Preloader from '../custome/Preloader';
 
+// code spliting
+const HomePage = React.lazy(() => import('../pages/HomePage'));
+
+
 const Body = () => {
     return (
-        <Suspense fallback={<h1>Loading....</h1>}>
+        <Suspense fallback={<Preloader />}>
             <Routes>
-                <Route path="/" element={<Preloader />} />
+                <Route path="/" element={<HomePage />} />
             </Routes>
         </Suspense>
     );
