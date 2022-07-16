@@ -1,10 +1,32 @@
 .product-details-area{
-    margin: 50px 30px;
+    margin: 50px 80px;
 }
 .product-details-data{
     display: grid;
     grid-template-columns: 40% 60%;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    font-family: 'Jost';
+    justify-items: center;
+    align-items: center;
 }
 .product-details-left img{
     width: 80%;
+}
+.product-details-right h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.product-details-right h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.product-details-right h4{
+    display: flex;
+    align-items: center;
+}
+.product-details-right span{
+    margin-left: 20px;
 }

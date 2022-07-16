@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Rating } from 'react-simple-star-rating'
 import { useParams } from 'react-router-dom';
 import { FaEye } from 'react-icons/fa';
 import Magnifier from "react-magnifier";
@@ -7,8 +8,8 @@ import '../../../styles/ProductDetails.css';
 const ProductDetails = () => {
     const {id} = useParams();
     const [productDetails, setProductDetails] = useState({});
-    console.log(productDetails);
     const {title, rating, description, image, price, category} = productDetails;
+    console.log(rating.rate);
     useEffect(() =>{
         fetch(`https://fakestoreapi.com/products/${id}`)
         .then(res => res.json())
@@ -19,7 +20,7 @@ const ProductDetails = () => {
             <div className="product-details-container">
                 <div className="product-details-data">
                     <div className="product-details-left">
-                    <Magnifier src={image} width={500} />
+                    <Magnifier mgShowOverflow="hidden" src={image} width={500} />
                     </div>
                     <div className="product-details-right">
                         <h2>{title}</h2>
@@ -27,6 +28,13 @@ const ProductDetails = () => {
                         <h4><FaEye /> 
                         <span>32 guests are viewing this product</span>
                         </h4>
+                        <div className="rating">
+                        <Rating
+                        readonly
+                        initialValue={rating}
+                        size="20px"
+                        />
+                        </div>
                     </div>
                 </div>
             </div>
