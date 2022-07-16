@@ -6,7 +6,6 @@ import EachProducts from './EachProducts';
 const AllProducts = () => {
     // load all products
     const [products, setProducts] = useState([]);
-    console.log(products);
     const [loading, setLoading] = useState(false);
     useEffect(() =>{
         setLoading(true)

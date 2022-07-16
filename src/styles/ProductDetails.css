@@ -1,0 +1,10 @@
+.product-details-area{
+    margin: 50px 30px;
+}
+.product-details-data{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.product-details-left img{
+    width: 80%;
+}
