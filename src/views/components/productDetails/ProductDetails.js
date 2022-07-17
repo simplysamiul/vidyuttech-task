@@ -13,6 +13,7 @@ import payment6 from '../../../assets/paymeny_icon/apple_pay.svg';
 import { FaShippingFast } from 'react-icons/fa';
 import { FcTimeline } from 'react-icons/fc';
 import '../../../styles/ProductDetails.css';
+import ProductDescription from '../Description/ProductDescription';
 
 const ProductDetails = () => {
     const {id} = useParams();
@@ -37,7 +38,7 @@ const ProductDetails = () => {
                     </div>
                     <div className="product-details-right">
                         <h2>{title}</h2>
-                        <h3>$ {price}</h3>
+                        <h3>$ {price} /-</h3>
                         <h4><FaEye /> 
                         <span>32 guests are viewing this product</span>
                         </h4>
@@ -84,6 +85,9 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>}
+            <div className="product-description-section">
+                <ProductDescription description={description} />
+            </div>
         </div>
     );
 };
