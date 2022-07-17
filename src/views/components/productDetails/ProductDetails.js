@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Rating } from 'react-simple-star-rating'
 import { useParams } from 'react-router-dom';
 import { FaEye } from 'react-icons/fa';
 import Magnifier from "react-magnifier";
-import '../../../styles/ProductDetails.css';
 import Preloader from '../../custome/Preloader';
 import SizeModal from '../../custome/Modal';
+import payment1 from '../../../assets/paymeny_icon/visa.svg';
+import payment2 from '../../../assets/paymeny_icon/google_pay.svg';
+import payment3 from '../../../assets/paymeny_icon/stripe.svg';
+import payment4 from '../../../assets/paymeny_icon/master_card.svg';
+import payment5 from '../../../assets/paymeny_icon/skrill.svg';
+import payment6 from '../../../assets/paymeny_icon/apple_pay.svg';
+import { FaShippingFast } from 'react-icons/fa';
+import { FcTimeline } from 'react-icons/fc';
+import '../../../styles/ProductDetails.css';
 
 const ProductDetails = () => {
     const {id} = useParams();
@@ -58,6 +65,21 @@ const ProductDetails = () => {
                         <div className="buy-button">
                             <button>Add To Cart</button>
                             <button>Buy Now</button>
+                        </div>
+                        <div className="checkout-section">
+                            <p>Secure checkout with</p>
+                            <div className="payment-method">
+                                <img src={payment1} alt="" />
+                                <img src={payment2} alt="" />
+                                <img src={payment3} alt="" />
+                                <img src={payment4} alt="" />
+                                <img src={payment5} alt="" />
+                                <img src={payment6} alt="" />
+                            </div>
+                        </div>
+                        <div className="delivary">
+                            <p><span className='delivary-icon'><FaShippingFast /></span> <span>Free shipping over $320</span></p>
+                            <p><span className='delivary-icon'><FcTimeline /></span> <span>Delivers in: 3-7 Working Days</span></p>
                         </div>
                     </div>
                 </div>
