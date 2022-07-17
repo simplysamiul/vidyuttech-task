@@ -6,7 +6,7 @@ import '../../../styles/EachProducts.css';
 
 
 const EachProducts = ({product}) => {
-    const {title, rating, price, image, id} = product;
+    const {title, rating, price, image, id, category} = product;
     return (
         <div className='product-cart'>
             <div className="product-cart-img">
@@ -35,6 +35,7 @@ const EachProducts = ({product}) => {
                     size="20px"
                     />
                 </div>
+                <p>{category}</p>
             </div>
         </div>
     );

@@ -7,6 +7,7 @@ const AllProducts = () => {
     // load all products
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
+    console.log(products)
     useEffect(() =>{
         setLoading(true)
         fetch("https://fakestoreapi.com/products")
