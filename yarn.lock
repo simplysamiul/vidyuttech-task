@@ -7473,6 +7473,11 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-scroll-to-top@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-scroll-to-top/-/react-scroll-to-top-1.0.9.tgz#8bbff6d996495aa25b9e43f7990a1f97524486b3"
+  integrity sha512-15R4HRW90idCg2taYSK2Sox/bNBv2Vq9acgu8wbR4mMSclDkNbS3EBenxfUrYh4JHB2WpxWbBty3bb6hQPzScA==
+
 react-simple-star-rating@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/react-simple-star-rating/-/react-simple-star-rating-4.0.5.tgz#030e576015c9fca881677c9eeb55218f42278cd8"

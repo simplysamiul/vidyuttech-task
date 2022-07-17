@@ -1,9 +1,12 @@
 import React from 'react';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Footer = () => {
     return (
         <div>
-            this is footer
+            <div className="scrool-top">
+            <ScrollToTop style={{background: "#C8815F"}} smooth top="170" color='white'/>
+            </div>
         </div>
     );
 };

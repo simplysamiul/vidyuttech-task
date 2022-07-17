@@ -86,7 +86,7 @@ const ProductDetails = () => {
                 </div>
             </div>}
             <div className="product-description-section">
-                <ProductDescription description={description} />
+                <ProductDescription description={description} rating={rating} />
             </div>
         </div>
     );

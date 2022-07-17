@@ -17,10 +17,62 @@
     font-weight: 500;
     font-size: 22px;
 }
-.product-description, .product-review{
+.product-description, .product-review-section{
     color: black !important;
     border-bottom: 2px solid black !important;
 }
 .product-description-data{
     margin-top: 30px;
+}
+/* product review */
+.product-review h3{
+    color: #111;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.product-review p{
+    color: #999;
+    font-size: 20px;
+}
+.product-review label, input{
+    display: block;
+}
+.name-email{
+    margin: 20px 0;
+}
+.name-email input{
+    width: 300px;
+    padding: 8px 10px;
+    font-size: 18px;
+}
+.name-email input:focus{
+    outline: none;
+    border: 2px solid #D6A288;
+}
+.review-form label{
+    color: #696969;
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+.name-email{
+    display: flex;
+}
+.name-email .name, .email{
+    margin-right: 20px;
+}
+.produt-rating{
+    margin: 20px 0;
+    display: flex;
+}
+.produt-rating h4{
+    color: #696969;
+    margin-right: 10px;
+}
+.message textarea{
+    width: 620px;
+}
+.message textarea:focus{
+    outline: none;
+    border: 2px solid #D6A288;
 }

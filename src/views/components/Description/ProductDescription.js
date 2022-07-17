@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { Rating } from 'react-simple-star-rating'
+
 import '../../../styles/ProductDescription.css';
 
-const ProductDescription = ({description}) => {
+const ProductDescription = ({description, rating}) => {
     const [productDescription, setProductDescription] = useState(true);
     const [review, setReview] = useState(false);
     // handel button
@@ -18,7 +20,7 @@ const ProductDescription = ({description}) => {
             <div className="produict-description-container">
                 <div className="description-button">
                     <button className={`${productDescription  ? "product-description" : ""}`} onClick={handelDescription}>Description</button>
-                    <button className={`${review  ? "product-review" : ""}`} onClick={handelReview}>Reviews (2)</button>
+                    <button className={`${review  ? "product-review-section" : ""}`} onClick={handelReview}>Reviews</button>
                 </div>
                 <div className="product-description-data">
                 {productDescription && <div>
@@ -29,7 +31,32 @@ const ProductDescription = ({description}) => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur quia a, nam perspiciatis tempora error eos voluptatibus officia commodi magni iste minima ad natus! Sint beatae ducimus cum repellat dolores. Dicta tempore velit sed molestias, laboriosam eveniet recusandae minima officiis omnis, ut nemo natus et totam? Labore, quas quam.</p>
                 </div>}
                 {review && <div className="product-review">
-                        <h1>This is revieew section</h1>
+                    <h3>Add Your Review</h3>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <div className="review-form">
+                        <div className="name-email">
+                        <div className="name">
+                        <label>Name *</label>
+                        <input type="text"  placeholder='Name'/>
+                        </div>
+                        <div className="email">
+                        <label>Email *</label>
+                        <input type="email" placeholder='Email' />
+                        </div>
+                        </div>
+                        <div className="produt-rating">
+                        <h4>Rating : </h4>
+                        <Rating
+                        readonly
+                        initialValue={rating.rate}
+                        size="22px"
+                        />
+                        </div>
+                        <div className="message">
+                        <label>Your Message *</label>
+                        <textarea name="" id="" cols="30" rows="10" />
+                        </div>
+                    </div>
                 </div>}
                 </div>
             </div>
