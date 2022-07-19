@@ -1,0 +1,22 @@
+.menu-area{
+    padding: 15px 50px;
+    box-shadow: 5px 5px 15px lightgrey;
+}
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-content-left h3{
+    font-size: 50px;
+    cursor: pointer;
+}
+.menu-content-right a{
+    margin: 15px 25px;
+    font-size: 30px;
+    color: grey;
+    transition: 0.5s ease-in-out;
+}
+.menu-content-right a:hover{
+    color: black;
+}

@@ -35,7 +35,6 @@ const EachProducts = ({product}) => {
                     size="20px"
                     />
                 </div>
-                <p>{category}</p>
             </div>
         </div>
     );
